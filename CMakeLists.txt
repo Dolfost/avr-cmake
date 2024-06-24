@@ -93,8 +93,10 @@ add_custom_target(size
 
 set_directory_properties(PROPERTIES
 	ADDITIONAL_CLEAN_FILES
-		${PROJECT_NAME}.hex
-		${PROJECT_NAME}.map
-		${PROJECT_NAME}.eeprom
+	[[
+		${PROJECT_NAME}.hex;
+		${PROJECT_NAME}.map;
+		${PROJECT_NAME}.eeprom;
 		${PROJECT_NAME}.lst
+	]]
 )
