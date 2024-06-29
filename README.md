@@ -24,6 +24,15 @@ The [CMakeLists.txt][cmkaelists] contains definitions for main executable `blink
 - _noflash_ the `avrdude` interface but with `-n` option (no instructions sent to chip)
 - _size_ calls the `avr-size` utility
 
+Note that You need to tell `cmake` where to find toolchain file at configure stage with
+```
+cmake -DCMAKE_TOOLCHAIN_FILE=avr.toolchain.cmake -B build
+```
+CMake 3.21 or later supports `--toolchain` option: 
+```
+cmake --toolchain avr.toolchain.cmake -B build
+```
+---
 ![blinker](images/blinker.jpg)
 
 Happy avr programming!
