@@ -1,0 +1,12 @@
+set(AVRCPP   avr-g++)
+set(AVRC     avr-gcc)
+set(AVRSTRIP avr-strip)
+set(OBJCOPY  avr-objcopy)
+set(OBJDUMP  avr-objdump)
+set(AVRSIZE  avr-size)
+set(AVRDUDE  avrdude)
+
+set(CMAKE_SYSTEM_NAME  Generic)
+set(CMAKE_CXX_COMPILER ${AVRCPP})
+set(CMAKE_C_COMPILER   ${AVRC})
+set(CMAKE_ASM_COMPILER ${AVRC})

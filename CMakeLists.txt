@@ -1,25 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
 
 set(PROG_TYPE usbasp)
-set(MCU   atmega168a)
-set(F_CPU 1000000)
-set(BAUD  9600)
-
-# program names
-set(AVRCPP   avr-g++)
-set(AVRC     avr-gcc)
-set(AVRSTRIP avr-strip)
-set(OBJCOPY  avr-objcopy)
-set(OBJDUMP  avr-objdump)
-set(AVRSIZE  avr-size)
-set(AVRDUDE  avrdude)
-
-# Set the compiler
-# Have to come before the project definition
-set(CMAKE_SYSTEM_NAME  Generic)
-set(CMAKE_CXX_COMPILER ${AVRCPP})
-set(CMAKE_C_COMPILER   ${AVRC})
-set(CMAKE_ASM_COMPILER ${AVRC})
+set(MCU       atmega168a)
+set(F_CPU     1000000)
+set(BAUD      9600)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
